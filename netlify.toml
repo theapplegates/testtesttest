@@ -7,28 +7,47 @@
 [dev]
   command = "yarn run start"
 
-
 [[redirects]]
   from = "/images/tiny/*"
   to = "/.netlify/images/?w=20&fit=cover&url=/images/:splat"
   status = 200
 
 [[redirects]]
-  from = "/images/small/*"
-  to = "/.netlify/images/?w=500&fit=cover&url=/images/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/images/medium/*"
-  to = "/.netlify/images/?w=600&fit=cover&url=/images/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/images/large/*"
-  to = "/.netlify/images/?w=700&fit=cover&url=/images/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/images/original/*"
-  to = "/.netlify/images/?url=/images/:splat"
-  status = 200
+    from = "/images/dr_no/*"
+    to = "/.netlify/images/?w=80&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/goldfinger/*"
+    to = "/.netlify/images/?w=200&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/thunderball/*"
+    to = "/.netlify/images/?w=320&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/you_only_live_twice/*"
+    to = "/.netlify/images/?w=570&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/live_and_let_die/*"
+    to = "/.netlify/images/?w=880&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/the_spy_who_loved_me/*"
+    to = "/.netlify/images/?w=1024&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/moonraker/*"
+    to = "/.netlify/images/?w=1248&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/original/*"
+    to = "/.netlify/images/?url=/images/:splat"
+    status = 200

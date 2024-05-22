@@ -12,7 +12,7 @@ function loadImage(picture) {
 
   var sources = picture.children;
   var loadingPath = "images/tiny";
-  var sizes = ["large","medium","small"];
+  var sizes = ["dr_no", "goldfinger", "thunderball", "you_only_live_twice", "live_and_let_die", "the_spy_who_loved_me", "moonraker", "original"];
 
   for(var s=0; s<sources.length; s++) {
     // update the src or srcset urls

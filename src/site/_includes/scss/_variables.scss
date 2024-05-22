@@ -1,12 +1,16 @@
 // Breakpoints
-$bp-narrow: "(min-width: 400px)";
-$bp-mid: "(min-width: 740px)";
-$bp-wide: "(min-width: 1200px)";
+$bp-dr_no: "(min-width: 80px)";
+$bp-goldfinger: "(min-width: 200px)";
+$bp-thunderball: "(min-width: 320px)";
+$bp-you_only_live_twice: "(min-width: 570px)";
+$bp-live_and_let_die: "(min-width: 880px)";
+$bp-the_spy_who_loved_me: "(min-width: 1024px)";
+$bp-moonraker: "(min-width: 1248px)";
 
 // Colours
 $page-color: #fff;
 $text-color: #333;
 $accent-color: #a435ff;
 
-// blur for lazy load
+// Blur for lazy load
 $blurRadius: 20px;

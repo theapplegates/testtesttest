@@ -1,11 +1,23 @@
 @mixin bp($point) {
-  @if $point == narrow {
-    @media #{$bp-narrow} { @content; }
+  @if $point == dr_no {
+    @media (max-width: 80px) { @content; }
   }
-  @else if $point == mid {
-    @media #{$bp-mid} { @content; }
+  @else if $point == goldfinger {
+    @media (max-width: 200px) { @content; }
   }
-  @else if $point == wide {
-    @media #{$bp-wide}  { @content; }
+  @else if $point == thunderball {
+    @media (max-width: 320px) { @content; }
+  }
+  @else if $point == you_only_live_twice {
+    @media (max-width: 570px) { @content; }
+  }
+  @else if $point == live_and_let_die {
+    @media (max-width: 880px) { @content; }
+  }
+  @else if $point == the_spy_who_loved_me {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == moonraker {
+    @media (max-width: 1248px) { @content; }
   }
 }
