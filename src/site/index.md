@@ -6,7 +6,7 @@ layout: default
 Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples.
 
 {% set somePhotos = [
-  {url: "lighthouse-5.jpg", credit: "ezgi yıldırım", creditURL: "https://unsplash.com/photos/Ej1mWW2cd6Q"}
+  {url: "bram-van-oost-89vaIi2nVa4-unsplash.jpg", credit: "Bram Van Oost", creditURL: "NA" on [Unsplash"}
 ] %}
 <section class="post-teaser">
 {%- for photo in somePhotos %}
@@ -16,7 +16,7 @@ Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for m
 </section >
 
 {% set somePhotos = [
-  {url: "my_image.jpg", credit: "Lia Marrugat", creditURL: "https://unsplash.com/@lia_marrugat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"}
+  {url: "daniel-akselrod-u2R935sC8ic-unsplash.jpg", credit: "Daniel Akselrod", creditURL: "https://unsplash.com/@daniel_akserlod?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash"}
 ] %}
 <section class="post-teaser">
 {%- for photo in somePhotos %}
@@ -51,19 +51,7 @@ The [redirects]({{ pkg.repository.url }}/blob/master/netlify.toml) and transform
 
 These images have been added to the page in various sizes, using the picture element with multiple image sources.
 
-{% set somePhotos = [
-  {url: "lighthouse-4.jpg", credit: "Charlota Blunarova", creditURL: "https://unsplash.com/photos/of4r2gHpCqU"},
-  {url: "lighthouse-3.jpg", credit: "Jesse Orrico", creditURL: "https://unsplash.com/photos/5xWf-gE_45U"},
-  {url: "lighthouse-2.jpg", credit: "Youjeen Cho", creditURL: "https://unsplash.com/photos/kNxB07EA9r4"},
-  {url: "lighthouse-1.jpg", credit: "Chris Meads", creditURL: "https://unsplash.com/photos/9FidI-IQxwY"}
-] %}
 
-<section class="post-teaser">
-{%- for photo in somePhotos %}
-  <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
-  {% lazypicture photo.url, "A snazzy lighthouse" %}
-{%- endfor -%}
-</section >
 
 
 ## A picture helper
