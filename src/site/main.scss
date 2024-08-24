@@ -2,6 +2,24 @@
 @import '_includes/scss/_mixins';
 @import '_includes/scss/_syntax';
 
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url('/src/site/fonts/inter-v18-latin-regular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter Tight';
+    src: url('/src/fonts/inter-tight-v7-latin-700.woff2') format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +45,7 @@ body {
   border-top: solid 8px $accent-color;
   border-bottom: solid 8px $accent-color;
   color: mix($text-color, $page-color, 60%);
-  font-family: sans-serif;
+  font-family: Inter;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.6;
@@ -47,22 +65,23 @@ header {
   width: 90%;
   text-align: left;
   @include bp(mid) {
-    width: 400px;
+    width: 600px;
   }
   @include bp(wide) {
-    width: 500px;
+    width: 700px;
   }
 }
 
 h1, h2, h3 {
   color: $text-color;
+  font-family: 'Inter Tight';
   font-weight: 600;
   padding-top: 2em;
   padding-bottom:0.2em;
   line-height: 1.2;
 }
 h1 {
-
+  font-family: 'Inter-Tight';
   @include bp(mid) {
     font-size: 2.4em;
   }
